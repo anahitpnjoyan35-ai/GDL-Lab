@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gyumri Development Laboratory — ռոբոտաշինություն, Arduino, էլեկտրոնիկա և գործնական տեխնոլոգիական կրթություն։">
+  <title>Գլխավոր | Gyumri Development Laboratory</title>
+  <!-- Bootstrap CSS framework -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="gdl-color-nav" aria-label="Հիմնական նավիգացիա">
+    <div class="container-xl">
+      <ul id="navbar1" class="gdl-navbar">
+        <li class="home-item">
+          <a class="header-cta" href="index.html">
+            <img src="images/logo.jpg" alt="GDL — Gyumri Development Laboratory">
+          </a>
+        </li>
+        <li id="btn1" class="gdl-btn gdl-text gdl-border-right">
+          <a href="courses.html">
+            <span class="gdl-title">ԴԱՍԸՆԹԱՑՆԵՐ</span>
+            <span class="gdl-arrow"></span>
+          </a>
+        </li>
+        <li id="btn2" class="gdl-btn gdl-text gdl-border-right">
+          <a href="projects.html">
+            <span class="gdl-title">ՆԱԽԱԳԾԵՐ</span>
+            <span class="gdl-arrow"></span>
+          </a>
+        </li>
+        <li id="btn3" class="gdl-btn gdl-text gdl-border-right"><a href="laboratory.html"><span class="gdl-title">ԼԱԲՈՐԱՏՈՐԻԱ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn4" class="gdl-btn gdl-text gdl-border-right"><a href="about.html"><span class="gdl-title">ՄԵՐ ՄԱՍԻՆ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn5" class="gdl-btn gdl-text"><a href="contact.html"><span class="gdl-title">ԿԱՊ</span><span class="gdl-arrow"></span></a></li>
+        <li class="register-item"><a class="header-cta" href="register.html"><span class="gdl-title-2">Գրանցվել</span></a></li>
+      </ul>
+      <button type="button" class="gdl-mobile-toggle" id="gdlMobileToggle" aria-label="Բացել մենյուն" aria-controls="gdlMobileMenu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="gdl-mobile-overlay" id="gdlMobileOverlay"></div>
+  <aside class="mobile-menu gdl-mobile-menu" id="gdlMobileMenu" aria-label="Հեռախոսի նավիգացիա" aria-hidden="true">
+    <div class="gdl-mobile-menu-head"><span>ՄԵՆՅՈՒ</span><button type="button" class="gdl-mobile-close" id="gdlMobileClose" aria-label="Փակել մենյուն">×</button></div>
+    <ul class="gdl-mobile-links">
+      <li><a href="index.html" aria-current="page" class="mobile-active">Գլխավոր</a></li><li><a href="courses.html">Դասընթացներ</a></li>
+      <li><a href="projects.html">Նախագծեր</a></li><li><a href="laboratory.html">Լաբորատորիա</a></li>
+      <li><a href="about.html">Մեր մասին</a></li><li><a href="contact.html">Կապ</a></li>
+      <li class="gdl-mobile-register"><a href="register.html">Գրանցվել <span>→</span></a></li>
+    </ul>
+  </aside>
+</header>
+
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container-xl hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> GDL • Robotics & STEAM Lab</p>
+          <h1>Սովորի՛ր ռոբոտաշինություն <em>զրոյից</em></h1>
+          <p class="hero-lead">Հետաքրքիր դասընթացներ, գործնական նախագծեր և իրական տեխնոլոգիական փորձ՝ ապագայի գաղափարները կյանքի կոչելու համար։</p>
+          <div class="hero-actions">
+            <a class="btn btn-orange btn-lg" href="courses.html">Մասնակցել դասընթացին <span>→</span></a>
+            <a class="text-link light-link" href="projects.html">Դիտել նախագծերը <span>↗</span></a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>Գործնական</strong><span>ուսուցում</span></div>
+            <div><strong>Arduino</strong><span>և էլեկտրոնիկա</span></div>
+            <div><strong>STEAM</strong><span>մոտեցում</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-corner" aria-hidden="true">
+      </div>
+    </section>
+
+    <section class="feature-strip container-xl" aria-label="Մեր առավելությունները">
+      <a href="courses.html" class="feature-item">
+        <span class="feature-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M4 16 24 6l20 10-20 10L4 16Zm7 5v10c8 7 18 7 26 0V21L24 31 11 21Zm31-2v12"/>
+          </svg></span>
+        <span><strong>Դասընթացներ</strong><small>Սկսնակներից մինչև գործնական առաջադրանքներ</small></span><b class="feature-arrow"></b>
+      </a>
+      <a href="projects.html" class="feature-item">
+        <span class="feature-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M20 4h8l2 6 5 2 5-3 5 7-4 5v6l4 5-5 7-6-3-5 2-2 6h-8l-2-6-5-2-5 3-5-7 4-5v-6l-4-5 5-7 6 3 5-2 2-6Zm4 12a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z"/></svg></span>
+        <span><strong>Գործնական աշխատանք</strong><small>Հավաքում, փորձարկում և խնդիրների լուծում</small></span><b class="feature-arrow"></b>
+      </a>
+      <a href="about.html" class="feature-item">
+        <span class="feature-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="15" r="7"/><circle cx="33" cy="17" r="6"/><path d="M3 39v-4c0-7 6-11 14-11s14 4 14 11v4H3Zm26-13c8-2 16 2 16 9v4H35v-4c0-4-2-7-6-9Z"/></svg></span>
+        <span><strong>Փոքր խմբեր</strong><small>Անհատական մոտեցում յուրաքանչյուր սովորողի</small></span><b class="feature-arrow"></b>
+      </a>
+      <a href="contact.html" class="feature-item">
+        <span class="feature-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 41h37M10 36V25h8v11M22 36V16h8v20M34 36V7h8v29"/></svg></span>
+        <span><strong>Իրական հմտություններ</strong><small>Տեխնիկական գիտելիքներ՝ ապագայի համար</small></span><b class="feature-arrow"></b>
+      </a>
+    </section>
+
+    <section class="courses-section section-pad" id="courses">
+      <div class="gdl-course-animation">
+        <div class="deck gdl-animation-deck" id="gdlAnimationDeck">
+          <div class="slides" id="gdlAnimationSlides">
+            <section class="slide slide-one active" id="gdlAnimationSlideOne">
+              <div class="ambient-grid"></div>
+              <header class="slide-heading">
+                <h1>Բացահայտիր <em>ռոբոտաշինության աշխարհը</em></h1>
+                <p>Գիտություն, տեխնոլոգիա և ստեղծարարություն՝ մեկ ուսումնական միջավայրում</p>
+              </header>
+              <div class="visual radial-visual" id="gdlRadialVisual">
+                <svg class="svg-layer" id="gdlRadialSvg" preserveAspectRatio="none" viewBox="0 0 1200 650"><g id="gdlRadialLines"></g></svg>
+                <div class="main-hub" id="gdlMainHub">
+                  <div class="hub-halo"></div><div class="hub-core logo-core">
+                  <img alt="GDL լոգո" class="center-logo" src="images/logo.jpg"/>
+                </div>
+                </div>
+                <div class="radial-node r1" data-radial=""><span>⚙</span> Ռոբոտաշինություն</div>
+                <div class="radial-node r2" data-radial=""><span>▦</span> Մեխանիկա</div>
+                <div class="radial-node r3" data-radial=""><span>⌁</span> Էլեկտրոնիկա</div>
+                <div class="radial-node r4" data-radial=""><span>ϟ</span> Arduino</div>
+                <div class="radial-node r5" data-radial=""><span>⌨</span> Ծրագրավորում</div>
+                <div class="radial-node r6" data-radial=""><span>◉</span> Սենսորներ</div>
+                <div class="radial-node r7" data-radial=""><span>▧</span> 3D մոդելավորում</div>
+                <div class="radial-node r8" data-radial=""><span>⚗</span> STEAM փորձեր</div>
+                <div class="radial-node r9" data-radial=""><span>✣</span> Արհեստական բանականություն</div>
+                <div class="radial-node r10" data-radial=""><span>◎</span> Մեքենայական տեսողություն</div>
+                <div class="radial-node r11" data-radial=""><span>✧</span> Նախագծային աշխատանք</div>
+              </div>
+              <div class="slide-footer">Սովորիր տեխնոլոգիաները՝ ստեղծելով իրական ռոբոտներ։</div>
+            </section>
+            <section class="slide slide-two" id="gdlAnimationSlideTwo">
+              <div class="ambient-grid"></div>
+              <header class="slide-heading">
+                <span class="eyebrow"><i></i> GDL · ՈՒՍՈՒՄՆԱԿԱՆ ԳՈՐԾԸՆԹԱՑ</span>
+                <h1>Գաղափարից մինչև <em>աշխատող ռոբոտ</em></h1>
+                <p>Ռոբոտի ստեղծման փուլերը՝ հերթականությամբ և գործնական աշխատանքով</p>
+              </header>
+              <div class="visual workflow-visual" id="gdlWorkflowVisual">
+                <svg class="svg-layer" id="gdlWorkflowSvg" preserveAspectRatio="none" viewBox="0 0 1200 650"><g id="gdlWorkflowLines"></g></svg>
+                <div class="workflow-hub" id="gdlWorkflowHub">
+                  <div class="hub-halo"></div><div class="hub-core logo-core">
+                  <img alt="GDL լոգո" class="center-logo" src="images/logo.jpg"/>
+                </div>
+                </div>
+                <div class="flow-node f1" data-flow=""><span class="flow-icon pink">✦</span><b>Գաղափարի մշակում</b><small>Նպատակ և խնդիր</small></div>
+                <div class="flow-node f2" data-flow=""><span class="flow-icon">⌘</span><b>Մեխանիկական կառուցվածք</b><small>Կոնստրուկտորներ</small></div>
+                <div class="flow-node f3" data-flow=""><span class="flow-icon orange">&lt;/&gt;</span><b>Ծրագրավորում</b><small>Scratch / Python</small></div>
+                <div class="flow-node f4" data-flow=""><span class="flow-icon">⚙</span><b>Էլեկտրոնիկա</b><small>Շղթաներ և Arduino</small></div>
+                <div class="flow-node f5" data-flow=""><span class="flow-icon green">◇</span><b>Սենսորների միացում</b><small>Չափում և կառավարում</small></div>
+                <div class="flow-node f6" data-flow=""><span class="flow-icon">↗</span><b>Ռոբոտի հավաքում</b><small>Մասերի միավորում</small></div>
+                <div class="flow-node f7" data-flow=""><span class="flow-icon orange">✧</span><b>Փորձարկում</b><small>Սխալների ուղղում</small></div>
+                <div class="flow-node f8" data-flow=""><span class="flow-icon green">∞</span><b>Պատրաստի նախագիծ</b><small>Ցուցադրում և զարգացում</small></div>
+              </div>
+              <div class="slide-footer">Հետազոտիր • Կառուցիր • Ծրագրավորիր • Փորձարկիր</div>
+            </section>
+          </div>
+          <nav aria-label="Սլայդերի կառավարում" class="deck-controls">
+            <button aria-label="Նախորդ սլայդ" class="arrow" id="gdlDeckPrev" type="button">←</button>
+            <div class="pagination"><button aria-label="Սլայդ 1" class="page-dot selected" data-go="0"></button><button aria-label="Սլայդ 2" class="page-dot" data-go="1"></button></div>
+            <span class="page-count" id="gdlDeckPageCount">01 / 02</span>
+            <button aria-label="Հաջորդ սլայդ" class="arrow next" id="gdlDeckNext" type="button">→</button>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section section-pad" id="about">
+      <div class="container-xl">
+        <div class="row align-items-center g-4 g-xl-5">
+          <div class="col-lg-4 intro-copy">
+            <p class="section-kicker">Մեր լաբորատորիան</p>
+            <h2>Ռոբոտաշինություն՝ <span>գործով սովորելու</span> համար</h2>
+            <p>Gyumri Development Laboratory-ում գաղափարները դառնում են իրական նախագծեր։ Սովորողները ծանոթանում են էլեկտրոնիկային, ծրագրավորմանը և մեխանիկական համակարգերին՝ փորձարկելով ու կառուցելով սեփական լուծումները։</p>
+            <a class="btn btn-orange" href="courses.html">Իմանալ ավելին <span>→</span></a>
+          </div>
+          <div class="col-lg-4">
+            <div class="intro-photo"><img src="images/robot-car-detail.jpg" alt="Գործնական աշխատանք՝ ռոբոտ-մեքենայի հավաքում" loading="lazy"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="learning-panel">
+              <p class="panel-title">Դասընթացի ընթացքում կսովորես</p>
+              <ul>
+                <li><span class="panel-symbol">▦</span> Էլեկտրոնիկայի հիմունքներ</li>
+                <li><span class="panel-symbol">&lt;/&gt;</span> Arduino և ծրագրավորում</li>
+                <li><span class="panel-symbol">⚙</span> Սենսորներ և շարժիչներ</li>
+                <li><span class="panel-symbol">⌘</span> Ռոբոտի կառուցում և փորձարկում</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section section-pad" id="projects">
+
+      <div class="container-xl">
+
+        <div class="projects-split-layout">
+
+          <!-- ՁԱԽ ՀԱՏՎԱԾ -->
+          <div class="projects-left-panel">
+
+            <div class="projects-heading">
+              <div>
+                <p class="section-kicker">Գաղափարից՝ արդյունք</p>
+                <h2>Մեր <span>աշխատանքները</span></h2>
+              </div>
+
+              <p>
+                Փորձարկումներ, մեխանիզմներ և ռոբոտներ,
+                որոնք կառուցվում են գործնական աշխատանքի ընթացքում։
+              </p>
+            </div>
+
+            <div class="project-gallery">
+
+              <a class="project-tile project-large" href="contact.html">
+                <img src="images/hero-student-robot.jpg"
+                     alt="Աշակերտը հավաքում է ռոբոտ"
+                     loading="lazy">
+                <span class="project-overlay">
+                            Ռոբոտաշինության լաբորատորիա <b>↗</b>
+                        </span>
+              </a>
+
+              <a class="project-tile" href="contact.html">
+                <img src="images/tracked-robot.jpg"
+                     alt="Թրթուրավոր ռոբոտ"
+                     loading="lazy">
+                <span class="project-overlay">
+                            Ինքնավար ռոբոտ <b>↗</b>
+                        </span>
+              </a>
+
+              <a class="project-tile" href="contact.html">
+                <img src="images/robotic-gripper.jpg"
+                     alt="Ռոբոտացված բռնիչ"
+                     loading="lazy">
+                <span class="project-overlay">
+                            Ռոբոտացված ձեռք <b>↗</b>
+                        </span>
+              </a>
+
+              <a class="project-tile" href="contact.html">
+                <img src="images/arduino-robot.jpg"
+                     alt="Arduino ռոբոտ"
+                     loading="lazy">
+                <span class="project-overlay">
+                            Arduino նախագիծ <b>↗</b>
+                        </span>
+              </a>
+
+              <a class="project-tile" href="contact.html">
+                <img src="images/robotic-arm.jpg"
+                     alt="Arduino ռոբոտ"
+                     loading="lazy">
+                <span class="project-overlay">
+                            Arduino նախագիծ <b>↗</b>
+                        </span>
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- ԱՋ ՀԱՏՎԱԾ -->
+          <div class="projects-right-panel">
+
+            <div class="gdl-gallery-section" id="gallery">
+
+              <div class="gdl-extra-heading">
+                <span class="gdl-extra-kicker">GDL MOMENTS</span>
+                <h2>Մեր նկարները</h2>
+                <p>
+                  Մեր աշխատանքները, միջոցառումները և հիշարժան պահերը։
+                </p>
+              </div>
+
+              <div class="gdl-gallery"
+                   aria-label="GDL լուսանկարների սլայդեր">
+
+                <div class="gdl-gallery-track">
+
+                  <!-- ՍԼԱՅԴ 1 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-01.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-02.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-03.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 2 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-04.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-05.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-06.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 3 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-07.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-08.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-09.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 4 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-10.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-11.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-12.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 5 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-13.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-14.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-15.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 6 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-16.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-17.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-18.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 7 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-19.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-20.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-21.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 8 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-22.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-23.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-24.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 9 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-25.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-26.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-27.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 10 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-28.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-29.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-30.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 11 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-31.png" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-32.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-33.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 12 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-34.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-35.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-36.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 13 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-37.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-38.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-39.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 14 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-40.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-41.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-42.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 15 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-43.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-44.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-45.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 16 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-46.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-47.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-48.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 17 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-49.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-50.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-51.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                  <!-- ՍԼԱՅԴ 18 -->
+                  <div class="gdl-gallery-slide">
+                    <figure class="gdl-gallery-item">
+                      <img src="gallery/gallery-52.jpg" alt="GDL-ի գործունեության լուսանկար" loading="lazy">
+                    </figure>
+                  </div>
+
+                </div>
+
+                <div class="gdl-gallery-controls">
+
+                  <button
+                          class="gdl-gallery-arrow"
+                          data-gallery-prev
+                          type="button"
+                          aria-label="Նախորդ նկարները">
+                    ‹
+                  </button>
+
+                  <div class="gdl-gallery-dots"
+                       aria-label="Սլայդերի էջեր">
+                  </div>
+
+                  <button
+                          class="gdl-gallery-arrow"
+                          data-gallery-next
+                          type="button"
+                          aria-label="Հաջորդ նկարները">
+                    ›
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+<!-- GDL video-slide -->
+    <section class="gdl-news-section section-pad" id="news">
+
+      <div class="container-xl">
+
+        <div class="gdl-extra-heading">
+          <span class="gdl-extra-kicker">GDL VIDEOS</span>
+          <h2>GDL-ը տեսանյութերով</h2>
+          <p>Ծանոթացիր մեր գործունեությանը, նախագծերին և հիշարժան պահերին։</p>
+        </div>
+
+        <div class="gdl-news-grid">
+
+          <!-- Տեսանյութ 1 -->
+
+          <article class="gdl-news-card">
+
+            <div class="gdl-video-preview">
+
+              <iframe
+                      src="https://www.youtube.com/embed/OPshEml5hWY"
+                      title="Գյումրեցի պատանիների նորարարական նվաճումը"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen>
+              </iframe>
+
+              <button
+                      class="gdl-video-expand"
+                      type="button"
+                      aria-label="Մեծացնել տեսանյութը">
+                ⛶
+              </button>
+
+            </div>
+
+            <div class="gdl-news-content">
+              <h3>Գյումրեցի պատանիների նորարարական նվաճումը</h3>
+              <p>«Գյումրի» զարգացման լաբորատորիան՝ Եվրոպայի և Աշխարհի չեմպիոն։</p>
+            </div>
+
+          </article>
+
+
+
+          <!-- Տեսանյութ 2 -->
+          <article class="gdl-news-card">
+
+            <div class="gdl-video-preview">
+              <video controls preload="metadata" poster="images/video-02.jpg" playsinline>
+                <source src="videos/video-02.mp4" type="video/mp4">
+                Ձեր դիտարկիչը չի աջակցում տեսանյութի ցուցադրումը։
+              </video>
+            </div>
+
+            <div class="gdl-news-content">
+              <h3>GDL-ի նախագծերը</h3>
+              <p>Մեր սովորողների ստեղծած հետաքրքիր նախագծերը։</p>
+            </div>
+
+          </article>
+
+
+          <!-- Տեսանյութ 3 -->
+          <article class="gdl-news-card">
+
+            <div class="gdl-video-preview">
+              <video controls preload="metadata" poster="images/video-03.jpg" playsinline>
+                <source src="videos/video-03.mp4" type="video/mp4">
+                Ձեր դիտարկիչը չի աջակցում տեսանյութի ցուցադրումը։
+              </video>
+            </div>
+
+            <div class="gdl-news-content">
+              <h3>GDL-ի նորությունները</h3>
+              <p>Նորություններ, միջոցառումներ և հիշարժան պահեր։</p>
+            </div>
+
+          </article>
+
+
+          <!-- Տեսանյութ 4 -->
+          <!-- YouTube տեսանյութ -->
+          <article class="gdl-news-card">
+
+            <div class="gdl-video-preview">
+              <video controls preload="metadata" poster="images/video-01.jpg" playsinline>
+                <source src="videos/video-01.mp4" type="video/mp4">
+                Ձեր դիտարկիչը չի աջակցում տեսանյութի ցուցադրումը։
+              </video>
+            </div>
+
+            <div class="gdl-news-content">
+              <h3>GDL-ի գործունեությունը</h3>
+              <p>Ծանոթացիր մեր աշխատանքներին և գործունեությանը։</p>
+            </div>
+
+          </article>
+
+                     </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+</section>
+
+
+  <!-- GDL STATISTICS -->
+  <section class="gdl-stats">
+
+    <div class="gdl-stat orange">
+      <span class="stat-icon">♟</span>
+      <div>
+        <h2>6–17</h2>
+        <p>Տարեկան երեխաներ</p>
+      </div>
+    </div>
+
+    <div class="gdl-stat purple">
+      <span class="stat-icon">🎓</span>
+      <div>
+        <h2>100+</h2>
+        <p>Ուսանողներ</p>
+      </div>
+    </div>
+
+    <div class="gdl-stat light-purple">
+      <span class="stat-icon">👥</span>
+      <div>
+        <h3>Փորձառու</h3>
+        <p>Մասնագետներ</p>
+      </div>
+    </div>
+
+    <div class="gdl-stat light">
+      <span class="stat-icon">🏆</span>
+      <div>
+        <h2>20+</h2>
+        <p>Նախագծեր և մրցույթներ</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- GDL ABOUT SECTION -->
+  <section class="gdl-about-section">
+
+    <div class="gdl-about-text">
+
+      <h2>Մեր մասին</h2>
+      <span class="gdl-orange-line"></span>
+
+      <p>
+        Գյումրու Զարգացման Լաբորատորիան (GDL)-ը կրթական
+        և գիտատեխնոլոգիական կենտրոն է, որը նպատակ ունի
+        երեխաների և պատանիների մեջ զարգացնել ստեղծարար
+        մտածողություն, տեխնոլոգիական հմտություններ և
+        նորարարական մոտեցումներ՝ առաջնորդելով Գյումրու
+        և Հայաստանի ապագա սերնդի աճին։
+      </p>
+
+      <a href="about.html" class="gdl-more-btn">
+        Ավելին <span>➜</span>
+      </a>
+
+    </div>
+
+
+    <div class="gdl-about-image">
+
+      <!-- Այստեղ տեղադրիր քո նկարը -->
+
+      <img src="images/1000185513.jpg"
+           alt="GDL ուսանողներ">
+
+    </div>
+
+
+    <div class="gdl-why-us">
+
+      <h3>Ինչու ընտրել մեզ</h3>
+      <span class="gdl-orange-line"></span>
+
+      <ul>
+        <li>Ժամանակակից սարքավորումներ</li>
+        <li>Փորձառու թիմ</li>
+        <li>Գործնական նախագծեր</li>
+        <li>Միջազգային համագործակցություններ</li>
+        <li>Մրցույթների մասնակցություն</li>
+        <li>Անվտանգ և ստեղծարար միջավայր</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+    <!-- GDL REGISTRATION -->
+    <section class="gdl-register">
+
+      <div class="gdl-register-info">
+
+        <div class="gdl-register-icon">
+          <svg viewBox="0 0 64 64" fill="none">
+            <rect x="13" y="9" width="38" height="49"
+                  rx="3" stroke="white" stroke-width="2.5"/>
+            <rect x="23" y="5" width="18" height="9"
+                  rx="2" stroke="white" stroke-width="2.5"/>
+            <path d="M21 25H43M21 34H43M21 43H36"
+                  stroke="white" stroke-width="2.5"
+                  stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div>
+          <h3>Գրանցվիր դասընթացին</h3>
+          <p>Լրացրու տվյալներդ և մենք կկապնվենք քեզ հետ։</p>
+        </div>
+
+      </div>
+
+
+      <form class="gdl-register-form">
+
+        <input type="text"
+               placeholder="Երեխայի անուն"
+               required>
+
+        <select required>
+          <option value="" disabled selected>Տարիք</option>
+          <option>6 տարեկան</option>
+          <option>7 տարեկան</option>
+          <option>8 տարեկան</option>
+          <option>9 տարեկան</option>
+          <option>10 տարեկան</option>
+          <option>11 տարեկան</option>
+          <option>12 տարեկան</option>
+          <option>13 տարեկան</option>
+          <option>14 տարեկան</option>
+          <option>15 տարեկան</option>
+          <option>16 տարեկան</option>
+          <option>17 տարեկան</option>
+        </select>
+
+        <input type="tel"
+               placeholder="Հեռախոս"
+               required>
+
+        <button type="submit">
+          Ուղարկել հայտը <span>➜</span>
+        </button>
+
+      </form>
+
+    </section>
+
+  <!-- GDL FOOTER -->
+  </main>
+
+<footer class="gdl-footer">
+
+    <div class="gdl-footer-main">
+
+      <div class="gdl-footer-brand">
+
+        <!-- Այստեղ տեղադրիր GDL լոգոն -->
+
+        <img src="images/logo.jpg" alt="GDL Logo">
+
+        <div>
+          <h3>GDL</h3>
+          <p>Գյումրու Զարգացման Լաբորատորիա</p>
+          <small>Gyumri Development Laboratory</small>
+        </div>
+
+      </div>
+
+
+      <div class="gdl-contact">
+        <span>📍</span>
+        <p>Մուշ 2 թաղամաս 4/18,<br>Գյումրի, Հայաստան</p>
+      </div>
+
+
+      <div class="gdl-contact">
+        <span>☎</span>
+        <p>+374 93 12 34 56</p>
+      </div>
+
+
+      <div class="gdl-contact">
+        <span>✉</span>
+        <p>info@gdl.am</p>
+      </div>
+
+
+      <div class="gdl-social">
+
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="YouTube">▶</a>
+
+      </div>
+
+    </div>
+  <div class="site-footer">
+    <div class="container-xl footer-inner">
+      <a class="footer-brand" href="#home"><span>Gyumri Development Laboratory<small>Տեխնոլոգիա • Ստեղծարարություն • Ապագա</small></span></a>
+      <p>© 2026 Gyumri Development Laboratory</p>
+      <div class="footer-links"><a href="courses.html">Դասընթացներ</a><a href="projects.html">Նախագծեր</a><a href="contact.html">Կապ</a></div>
+    </div>
+  </div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

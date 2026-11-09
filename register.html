@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hy"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gyumri Development Laboratory — ռոբոտաշինություն, Arduino, էլեկտրոնիկա և գործնական տեխնոլոգիական կրթություն։">
+<title>Գրանցում | Gyumri Development Laboratory</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="responsive.css">
+</head><body>
+<header class="site-header">
+  <nav class="gdl-color-nav" aria-label="Հիմնական նավիգացիա">
+    <div class="container-xl">
+      <ul id="navbar1" class="gdl-navbar">
+        <li class="home-item"><a class="header-cta" href="index.html"><img src="images/logo.jpg" alt="GDL — Gyumri Development Laboratory"></a></li>
+        <li id="btn1" class="gdl-btn gdl-text gdl-border-right"><a href="courses.html"><span class="gdl-title">ԴԱՍԸՆԹԱՑՆԵՐ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn2" class="gdl-btn gdl-text gdl-border-right"><a href="projects.html"><span class="gdl-title">ՆԱԽԱԳԾԵՐ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn3" class="gdl-btn gdl-text gdl-border-right"><a href="laboratory.html"><span class="gdl-title">ԼԱԲՈՐԱՏՈՐԻԱ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn4" class="gdl-btn gdl-text gdl-border-right"><a href="about.html"><span class="gdl-title">ՄԵՐ ՄԱՍԻՆ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn5" class="gdl-btn gdl-text"><a href="contact.html"><span class="gdl-title">ԿԱՊ</span><span class="gdl-arrow"></span></a></li>
+        <li class="register-item"><a class="header-cta" href="register.html"><span class="gdl-title-2">Գրանցվել</span></a></li>
+      </ul>
+      <button type="button" class="gdl-mobile-toggle" id="gdlMobileToggle" aria-label="Բացել մենյուն" aria-controls="gdlMobileMenu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="gdl-mobile-overlay" id="gdlMobileOverlay"></div>
+  <aside class="mobile-menu gdl-mobile-menu" id="gdlMobileMenu" aria-label="Հեռախոսի նավիգացիա" aria-hidden="true">
+    <div class="gdl-mobile-menu-head"><span>ՄԵՆՅՈՒ</span><button type="button" class="gdl-mobile-close" id="gdlMobileClose" aria-label="Փակել մենյուն">×</button></div>
+    <ul class="gdl-mobile-links">
+      <li><a href="index.html">Գլխավոր</a></li><li><a href="courses.html">Դասընթացներ</a></li>
+      <li><a href="projects.html">Նախագծեր</a></li><li><a href="laboratory.html">Լաբորատորիա</a></li>
+      <li><a href="about.html">Մեր մասին</a></li><li><a href="contact.html">Կապ</a></li>
+      <li class="gdl-mobile-register"><a href="register.html" aria-current="page" class="mobile-active">Գրանցվել <span>→</span></a></li>
+    </ul>
+  </aside>
+</header>
+<main><section class="gdl-inner-content"><div class="container-xl"><div class="gdl-register-page">
+<aside class="gdl-register-aside"><div class="gdl-card-icon">✦</div><div class="gdl-breadcrumb">GDL · JOIN OUR LAB</div><h2>Քո գաղափարը կարող է դառնալ իրական նախագիծ։</h2><p>Լրացրու հայտը, նշիր հետաքրքրող ուղղությունը, և ծանոթացիր GDL-ի տեխնոլոգիական ուսուցման միջավայրին։</p><ul><li>6–17 տարեկանների համար</li><li>Գործնական ուսուցում և նախագծեր</li><li>Ռոբոտաշինություն, Arduino և ծրագրավորում</li></ul></aside>
+<div class="gdl-form-card"><h2 class="section-title">Գրանցման հայտ</h2><p class="section-lead" style="margin-bottom:22px">Բոլոր աստղանիշով նշված դաշտերը պարտադիր են։</p>
+<form id="gdlApplicationForm">
+<div class="gdl-form-grid">
+<div class="gdl-field"><label for="childName">Երեխայի անուն, ազգանուն *</label><input id="childName" name="childName" autocomplete="name" required placeholder="Օրինակ՝ Անի Սարգսյան"></div>
+<div class="gdl-field"><label for="childAge">Երեխայի տարիքը *</label><select id="childAge" name="childAge" required><option value="">Ընտրիր տարիքը</option><option value="6">6 տարեկան</option><option value="7">7 տարեկան</option><option value="8">8 տարեկան</option><option value="9">9 տարեկան</option><option value="10">10 տարեկան</option><option value="11">11 տարեկան</option><option value="12">12 տարեկան</option><option value="13">13 տարեկան</option><option value="14">14 տարեկան</option><option value="15">15 տարեկան</option><option value="16">16 տարեկան</option><option value="17">17 տարեկան</option></select></div>
+<div class="gdl-field"><label for="parentName">Ծնողի / խնամակալի անուն *</label><input id="parentName" name="parentName" required placeholder="Անուն, ազգանուն"></div>
+<div class="gdl-field"><label for="phone">Հեռախոսահամար *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+374 XX XX XX XX"></div>
+<div class="gdl-field"><label for="email">Էլ․ փոստ</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
+<div class="gdl-field"><label for="courseChoice">Հետաքրքրող ուղղություն *</label><select id="courseChoice" name="courseChoice" required><option value="">Ընտրիր ուղղությունը</option><option>Ռոբոտաշինություն</option><option>Arduino և էլեկտրոնիկա</option><option>Ծրագրավորում</option><option>3D մոդելավորում</option><option>STEAM նախագծեր</option><option>Դեռ չեմ կողմնորոշվել</option></select></div>
+<div class="gdl-field full"><label for="message">Լրացուցիչ տեղեկություն</label><textarea id="message" name="message" placeholder="Գրիր հարցերդ կամ նախընտրելի ժամերը..."></textarea></div>
+</div>
+<label class="gdl-consent"><input type="checkbox" id="consent" required><span>Համաձայն եմ, որ նշված տվյալներն օգտագործվեն միայն գրանցման հայտի մշակման և կապ հաստատելու նպատակով։ *</span></label>
+<button class="gdl-submit" type="submit">Ուղարկել հայտը <span>➜</span></button>
+<div class="gdl-success" id="gdlFormSuccess" role="status" aria-live="polite">Շնորհակալություն։ Ձևը լրացված է։ Այս ցուցադրական տարբերակում հայտը դեռ չի ուղարկվում սերվեր․ տվյալների իրական ստացման համար պետք է միացնել backend կամ հայտերի ծառայություն։</div>
+<p class="gdl-form-note">Նշում․ այս պահին սա աշխատող front-end ձև է՝ դաշտերի ստուգմամբ և հաստատման հաղորդագրությամբ։ Հայտերի պահպանում/ուղարկում դեռ միացված չէ։</p>
+</form></div></div></div></section></main>
+<footer class="gdl-footer"><div class="gdl-footer-main">
+  <div class="gdl-footer-brand"><img src="images/logo.jpg" alt="GDL Logo"><div><h3>GDL</h3><p>Գյումրու Զարգացման Լաբորատորիա</p><small>Gyumri Development Laboratory</small></div></div>
+  <div class="gdl-contact"><span>📍</span><p>Մուշ 2 թաղամաս 4/18,<br>Գյումրի, Հայաստան</p></div>
+  <div class="gdl-contact"><span>☎</span><p>+374 93 12 34 56</p></div>
+  <div class="gdl-contact"><span>✉</span><p><a href="mailto:info@gdl.am">info@gdl.am</a></p></div>
+  <div class="gdl-social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div>
+</div><div class="site-footer"><div class="container-xl footer-inner">
+  <a class="footer-brand" href="index.html"><span>Gyumri Development Laboratory<small>Տեխնոլոգիա • Ստեղծարարություն • Ապագա</small></span></a>
+  <p>© 2026 Gyumri Development Laboratory</p>
+  <div class="footer-links"><a href="courses.html">Դասընթացներ</a><a href="projects.html">Նախագծեր</a><a href="contact.html">Կապ</a></div>
+</div></div></footer>
+<script src="script.js" defer></script></body></html>

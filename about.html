@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="hy">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
+            name="description"
+            content="Gyumri Development Laboratory — ռոբոտաշինություն, Arduino, էլեկտրոնիկա և գործնական տեխնոլոգիական կրթություն։"
+    >
+
+    <title>Մեր մասին | Gyumri Development Laboratory</title>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+
+    <nav class="gdl-color-nav" aria-label="Հիմնական նավիգացիա">
+
+        <div class="container-xl">
+
+            <ul id="navbar1" class="gdl-navbar">
+
+                <li class="home-item">
+                    <a class="header-cta" href="index.html">
+                        <img
+                                src="images/logo.jpg"
+                                alt="GDL — Gyumri Development Laboratory"
+                        >
+                    </a>
+                </li>
+
+                <li id="btn1" class="gdl-btn gdl-text gdl-border-right">
+                    <a href="courses.html">
+                        <span class="gdl-title">ԴԱՍԸՆԹԱՑՆԵՐ</span>
+                        <span class="gdl-arrow"></span>
+                    </a>
+                </li>
+
+                <li id="btn2" class="gdl-btn gdl-text gdl-border-right">
+                    <a href="projects.html">
+                        <span class="gdl-title">ՆԱԽԱԳԾԵՐ</span>
+                        <span class="gdl-arrow"></span>
+                    </a>
+                </li>
+
+                <li id="btn3" class="gdl-btn gdl-text gdl-border-right">
+                    <a href="laboratory.html">
+                        <span class="gdl-title">ԼԱԲՈՐԱՏՈՐԻԱ</span>
+                        <span class="gdl-arrow"></span>
+                    </a>
+                </li>
+
+                <li id="btn4" class="gdl-btn active gdl-text gdl-border-right">
+                    <a
+                            class="mobile-active"
+                            aria-current="page"
+                            href="about.html"
+                    >
+                        <span class="gdl-title">ՄԵՐ ՄԱՍԻՆ</span>
+                        <span class="gdl-arrow"></span>
+                    </a>
+                </li>
+
+                <li id="btn5" class="gdl-btn gdl-text">
+                    <a href="contact.html">
+                        <span class="gdl-title">ԿԱՊ</span>
+                        <span class="gdl-arrow"></span>
+                    </a>
+                </li>
+
+                <li class="register-item">
+                    <a class="header-cta" href="register.html">
+                        <span class="gdl-title-2">Գրանցվել</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <button
+                    type="button"
+                    class="gdl-mobile-toggle"
+                    id="gdlMobileToggle"
+                    aria-label="Բացել մենյուն"
+                    aria-controls="gdlMobileMenu"
+                    aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <div
+            class="gdl-mobile-overlay"
+            id="gdlMobileOverlay"
+    ></div>
+
+    <aside
+            class="mobile-menu gdl-mobile-menu"
+            id="gdlMobileMenu"
+            aria-label="Հեռախոսի նավիգացիա"
+            aria-hidden="true"
+    >
+
+        <div class="gdl-mobile-menu-head">
+
+            <span>ՄԵՆՅՈՒ</span>
+
+            <button
+                    type="button"
+                    class="gdl-mobile-close"
+                    id="gdlMobileClose"
+                    aria-label="Փակել մենյուն"
+            >
+                ×
+            </button>
+
+        </div>
+
+        <ul class="gdl-mobile-links">
+
+            <li>
+                <a href="index.html">Գլխավոր</a>
+            </li>
+
+            <li>
+                <a href="courses.html">Դասընթացներ</a>
+            </li>
+
+            <li>
+                <a href="projects.html">Նախագծեր</a>
+            </li>
+
+            <li>
+                <a href="laboratory.html">Լաբորատորիա</a>
+            </li>
+
+            <li>
+                <a
+                        href="about.html"
+                        aria-current="page"
+                        class="mobile-active"
+                >
+                    Մեր մասին
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">Կապ</a>
+            </li>
+
+            <li class="gdl-mobile-register">
+                <a href="register.html">
+                    Գրանցվել <span>→</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+</header>
+
+
+<!-- MAIN -->
+<main class="gdl-feature-page about-page">
+
+
+    <!-- HERO SECTION -->
+    <section class="gdl-feature-hero about-hero">
+
+        <div class="gdl-feature-hero-grid"></div>
+
+        <div class="container-xl gdl-feature-hero-inner">
+
+            <div class="gdl-feature-hero-copy">
+
+                    <span class="gdl-feature-eyebrow">
+                        <i></i>
+                        GDL · ՄԵՐ ՄԱՍԻՆ
+                    </span>
+
+                <h1>
+                    Ծանոթացիր <em>GDL-ին</em>
+                </h1>
+
+                <p>
+                    Gyumri Development Laboratory-ն կրթական միջավայր է,
+                    որտեղ երեխաներն ու պատանիները բացահայտում են
+                    տեխնոլոգիաները՝ գործնական աշխատանքի և սեփական
+                    նախագծերի միջոցով։
+                </p>
+
+                <div class="gdl-feature-actions">
+
+                    <a
+                            class="gdl-feature-button"
+                            href="courses.html"
+                    >
+                        Դիտել դասընթացները <span>→</span>
+                    </a>
+
+                    <a
+                            class="gdl-feature-textlink"
+                            href="projects.html"
+                    >
+                        Մեր նախագծերը ↗
+                    </a>
+
+                </div>
+
+                <div class="gdl-feature-points">
+
+                    <div>
+                        <b>✦</b>
+                        <span>
+                                Ստեղծարար<br>
+                                մտածողություն
+                            </span>
+                    </div>
+
+                    <div>
+                        <b>♧</b>
+                        <span>
+                                Համագործակցային<br>
+                                ուսուցում
+                            </span>
+                    </div>
+
+                    <div>
+                        <b>⚙</b>
+                        <span>
+                                Գործնական<br>
+                                փորձ
+                            </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="gdl-feature-hero-photo about-photo">
+
+                <img
+                        src="images/hero-student-robot.jpg"
+                        alt="GDL սովորողները միասին աշխատում են ռոբոտի նախագծի վրա"
+                >
+
+                <div class="gdl-photo-caption">
+                    <span></span>
+                    IDEAS · PEOPLE · TECHNOLOGY
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT CONTENT -->
+    <section class="gdl-feature-content about-content">
+
+        <div class="container-xl">
+
+
+            <!-- ABOUT INTRO -->
+            <div class="gdl-about-intro">
+
+                <div class="gdl-about-image">
+
+                    <img
+                            src="images/logo.jpg"
+                            alt="Gyumri Development Laboratory GDL"
+                    >
+
+                </div>
+
+
+                <div class="gdl-about-story">
+
+                        <span class="gdl-feature-kicker">
+                            WHO WE ARE
+                        </span>
+
+                    <h2>
+                        Մեր նպատակը՝ սովորեցնել <em>ստեղծել</em>
+                    </h2>
+
+                    <p>
+                        Մենք հավատում ենք, որ տեխնոլոգիաները լավագույնս
+                        են յուրացվում փորձելով։ GDL-ում սովորողները
+                        ոչ միայն ծանոթանում են ռոբոտաշինությանը և
+                        ծրագրավորմանը, այլև սովորում են մտածել,
+                        համագործակցել և իրենց գաղափարները վերածել
+                        իրական նախագծերի։
+                    </p>
+
+                    <p>
+                        Մեր մոտեցման հիմքում գործնական ուսուցումն է՝
+                        գաղափարից և նախագծումից մինչև հավաքում,
+                        ծրագրավորում ու փորձարկում։
+                    </p>
+
+                    <a
+                            class="gdl-feature-outline"
+                            href="laboratory.html"
+                    >
+                        Բացահայտել լաբորատորիան <span>↗</span>
+                    </a>
+
+                </div>
+
+
+                <!-- FACTS -->
+                <div class="gdl-about-facts">
+
+                    <div>
+                        <strong>GDL</strong>
+                        <span>
+                                Gyumri Development Laboratory
+                            </span>
+                    </div>
+
+                    <div>
+                        <strong>STEAM</strong>
+                        <span>
+                                Գիտություն · Տեխնոլոգիա ·
+                                Ճարտարագիտություն · Արվեստ · Մաթեմատիկա
+                            </span>
+                    </div>
+
+                    <div>
+                        <strong>6–17</strong>
+                        <span>
+                                Երեխաների և պատանիների տարիքային ուղղվածություն
+                            </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VALUES HEADING -->
+            <div class="gdl-about-values-head">
+
+                    <span class="gdl-feature-kicker">
+                        ՄԵՐ ՍԿԶԲՈՒՆՔՆԵՐԸ
+                    </span>
+
+                <h2>
+                    Արժեքներ, որոնցով <em>առաջ ենք շարժվում</em>
+                </h2>
+
+                <p>
+                    Մենք կարևորում ենք ոչ միայն վերջնական արդյունքը,
+                    այլև այն հմտությունները, որոնք ձևավորվում են
+                    ստեղծելու ճանապարհին։
+                </p>
+
+            </div>
+
+
+            <!-- VALUES -->
+            <div class="gdl-about-values">
+
+                <article>
+
+                    <span>✦</span>
+
+                    <h3>Հետաքրքրասիրություն</h3>
+
+                    <p>
+                        Խրախուսում ենք հարցեր տալը, ուսումնասիրելը
+                        և նոր լուծումներ փնտրելը։
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>⚙</span>
+
+                    <h3>Գործնականություն</h3>
+
+                    <p>
+                        Գիտելիքը ամրապնդվում է իրական սարքերի
+                        և նախագծերի միջոցով։
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>♧</span>
+
+                    <h3>Համագործակցություն</h3>
+
+                    <p>
+                        Թիմային աշխատանքով զարգացնում ենք
+                        հաղորդակցման և խնդիրների լուծման հմտությունները։
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>◎</span>
+
+                    <h3>Ստեղծարարություն</h3>
+
+                    <p>
+                        Օգնում ենք գաղափարները վերածել նորարարական
+                        փորձերի և աշխատող լուծումների։
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- QUOTE -->
+            <div class="gdl-about-quote">
+
+                <span>“</span>
+
+                <div>
+
+                    <h2>
+                        Սովորել՝ ստեղծելով։ Զարգանալ՝ փորձելով։
+                    </h2>
+
+                    <p>
+                        GDL · Տեխնոլոգիա • Ստեղծարարություն • Ապագա
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM CTA -->
+            <div class="gdl-feature-bottom-cta">
+
+                <div>
+
+                    <span>GDL · YOUR IDEAS MATTER</span>
+
+                    <h2>
+                        Սկսիր քո տեխնոլոգիական ճանապարհը մեզ հետ։
+                    </h2>
+
+                    <p>
+                        Ծանոթացիր դասընթացներին և ընտրիր քեզ
+                        հետաքրքրող ուղղությունը։
+                    </p>
+
+                </div>
+
+                <a
+                        class="gdl-feature-button"
+                        href="register.html"
+                >
+                    Գրանցվել <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="gdl-footer">
+
+    <div class="gdl-footer-main">
+
+
+        <!-- FOOTER BRAND -->
+        <div class="gdl-footer-brand">
+
+            <img
+                    src="images/logo.jpg"
+                    alt="GDL Logo"
+            >
+
+            <div>
+
+                <h3>GDL</h3>
+
+                <p>
+                    Գյումրու Զարգացման Լաբորատորիա
+                </p>
+
+                <small>
+                    Gyumri Development Laboratory
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADDRESS -->
+        <div class="gdl-contact">
+
+            <span>📍</span>
+
+            <p>
+                Մուշ 2 թաղամաս 4/18,<br>
+                Գյումրի, Հայաստան
+            </p>
+
+        </div>
+
+
+        <!-- PHONE -->
+        <div class="gdl-contact">
+
+            <span>☎</span>
+
+            <p>
+                +374 93 12 34 56
+            </p>
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="gdl-contact">
+
+            <span>✉</span>
+
+            <p>
+                <a href="mailto:info@gdl.am">
+                    info@gdl.am
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- SOCIAL -->
+        <div class="gdl-social">
+
+            <a href="#" aria-label="Facebook">f</a>
+
+            <a href="#" aria-label="Instagram">◎</a>
+
+            <a href="#" aria-label="YouTube">▶</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SITE FOOTER -->
+    <div class="site-footer">
+
+        <div class="container-xl footer-inner">
+
+            <a
+                    class="footer-brand"
+                    href="index.html"
+            >
+                    <span>
+                        Gyumri Development Laboratory
+
+                        <small>
+                            Տեխնոլոգիա • Ստեղծարարություն • Ապագա
+                        </small>
+                    </span>
+            </a>
+
+
+            <p>
+                © 2026 Gyumri Development Laboratory
+            </p>
+
+
+            <div class="footer-links">
+
+                <a href="courses.html">Դասընթացներ</a>
+
+                <a href="projects.html">Նախագծեր</a>
+
+                <a href="contact.html">Կապ</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js" defer></script>
+
+</body>
+
+</html>

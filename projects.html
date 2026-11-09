@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="hy"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gyumri Development Laboratory — ռոբոտաշինություն, Arduino, էլեկտրոնիկա և գործնական տեխնոլոգիական կրթություն։">
+<title>Նախագծեր | Gyumri Development Laboratory</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="responsive.css">
+</head><body>
+<header class="site-header">
+  <nav class="gdl-color-nav" aria-label="Հիմնական նավիգացիա">
+    <div class="container-xl">
+      <ul id="navbar1" class="gdl-navbar">
+        <li class="home-item"><a class="header-cta" href="index.html"><img src="images/logo.jpg" alt="GDL — Gyumri Development Laboratory"></a></li>
+        <li id="btn1" class="gdl-btn gdl-text gdl-border-right"><a href="courses.html"><span class="gdl-title">ԴԱՍԸՆԹԱՑՆԵՐ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn2" class="gdl-btn active gdl-text gdl-border-right"><a class="mobile-active" aria-current="page" href="projects.html"><span class="gdl-title">ՆԱԽԱԳԾԵՐ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn3" class="gdl-btn gdl-text gdl-border-right"><a href="laboratory.html"><span class="gdl-title">ԼԱԲՈՐԱՏՈՐԻԱ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn4" class="gdl-btn gdl-text gdl-border-right"><a href="about.html"><span class="gdl-title">ՄԵՐ ՄԱՍԻՆ</span><span class="gdl-arrow"></span></a></li>
+        <li id="btn5" class="gdl-btn gdl-text"><a href="contact.html"><span class="gdl-title">ԿԱՊ</span><span class="gdl-arrow"></span></a></li>
+        <li class="register-item"><a class="header-cta" href="register.html"><span class="gdl-title-2">Գրանցվել</span></a></li>
+      </ul>
+      <button type="button" class="gdl-mobile-toggle" id="gdlMobileToggle" aria-label="Բացել մենյուն" aria-controls="gdlMobileMenu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="gdl-mobile-overlay" id="gdlMobileOverlay"></div>
+  <aside class="mobile-menu gdl-mobile-menu" id="gdlMobileMenu" aria-label="Հեռախոսի նավիգացիա" aria-hidden="true">
+    <div class="gdl-mobile-menu-head"><span>ՄԵՆՅՈՒ</span><button type="button" class="gdl-mobile-close" id="gdlMobileClose" aria-label="Փակել մենյուն">×</button></div>
+    <ul class="gdl-mobile-links">
+      <li><a href="index.html">Գլխավոր</a></li><li><a href="courses.html">Դասընթացներ</a></li>
+      <li><a href="projects.html" aria-current="page" class="mobile-active">Նախագծեր</a></li><li><a href="laboratory.html">Լաբորատորիա</a></li>
+      <li><a href="about.html">Մեր մասին</a></li><li><a href="contact.html">Կապ</a></li>
+      <li class="gdl-mobile-register"><a href="register.html">Գրանցվել <span>→</span></a></li>
+    </ul>
+  </aside>
+</header>
+<main class="projects-page">
+  <section class="projects-hero">
+    <div class="projects-hero-circuit" aria-hidden="true"></div>
+    <div class="container-xl projects-hero-inner">
+      <div class="projects-hero-copy">
+        <span class="projects-eyebrow"><i></i> GDL · PROJECTS</span>
+        <h1>Մեր <em>նախագծերը</em></h1>
+        <p>Գաղափարներ, որոնք դառնում են իրականություն։ Բացահայտիր GDL-ի սովորողների ստեղծած ռոբոտները, էլեկտրոնային համակարգերն ու տեխնոլոգիական լուծումները։</p>
+        <div class="projects-hero-actions">
+          <a class="projects-primary-btn" href="#project-gallery">Դիտել նախագծերը <span>→</span></a>
+          <a class="projects-secondary-link" href="courses.html">Ծանոթանալ դասընթացներին ↗</a>
+        </div>
+        <div class="projects-stats">
+          <div class="projects-stat"><span class="projects-stat-icon">▱</span><div><strong>Գործնական</strong><small>նախագծային ուսուցում</small></div></div>
+          <div class="projects-stat"><span class="projects-stat-icon">♙</span><div><strong>Թիմային</strong><small>համագործակցություն</small></div></div>
+          <div class="projects-stat"><span class="projects-stat-icon">✦</span><div><strong>Ստեղծարար</strong><small>գաղափարներ և լուծումներ</small></div></div>
+        </div>
+      </div>
+      <div class="projects-hero-visual">
+        <div class="projects-hero-glow"></div>
+        <img src="images/robot-car-detail.jpg" alt="GDL ռոբոտ մեքենայի նախագիծ" onerror="this.style.display='none'">
+        <div class="projects-visual-tag"><span></span> BUILD · TEST · CREATE</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="projects-work" id="project-gallery">
+    <div class="container-xl">
+      <div class="projects-section-heading">
+        <div>
+          <span class="projects-kicker">GDL / PROJECT GALLERY</span>
+          <h2>Ստեղծում ենք, փորձարկում, կատարելագործում</h2>
+          <p>Յուրաքանչյուր նախագիծ սկսվում է հարցից, անցնում փորձարկումների միջով և դառնում նոր հմտություն։</p>
+        </div>
+        <span class="projects-count"><b id="projectsVisibleCount">06</b> նախագիծ</span>
+      </div>
+
+      <div class="projects-filters" role="group" aria-label="Նախագծերի կատեգորիաների ֆիլտր">
+        <button class="project-filter is-active" type="button" data-filter="all" aria-pressed="true">Բոլոր նախագծերը</button>
+        <button class="project-filter" type="button" data-filter="robotics" aria-pressed="false">Ռոբոտաշինություն</button>
+        <button class="project-filter" type="button" data-filter="electronics" aria-pressed="false">Էլեկտրոնիկա</button>
+        <button class="project-filter" type="button" data-filter="automation" aria-pressed="false">Ավտոմատացում</button>
+        <button class="project-filter" type="button" data-filter="programming" aria-pressed="false">Ծրագրավորում</button>
+        <button class="project-filter" type="button" data-filter="steam" aria-pressed="false">STEAM</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="robotics">
+          <a class="project-image" href="#project-tracked" aria-label="Թրթուրավոր ռոբոտի մանրամասները">
+            <img src="images/tracked-robot.jpg" alt="Թրթուրավոր ռոբոտ" loading="lazy">
+            <span class="project-badge badge-violet">Ռոբոտաշինություն</span><span class="project-image-arrow">↗</span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>01 / ROBOTICS</span><span class="project-dot dot-violet"></span></div>
+            <h3>Թրթուրավոր ռոբոտ</h3>
+            <p>Շարժման մեխանիզմների հավաքում, շարժիչների կառավարում և տարբեր մակերեսների վրա փորձարկում։</p>
+            <a class="project-more" href="#project-tracked">Դիտել նախագիծը <span>→</span></a>
+          </div>
+          <details class="project-details" id="project-tracked"><summary>Նախագծի մանրամասները</summary><p>Նախագծի ընթացքում ուսումնասիրվում են ռոբոտի շարժական հարթակը, շարժիչների միացումը և կառավարման հիմնական սկզբունքները։</p></details>
+        </article>
+
+        <article class="project-card" data-category="automation">
+          <a class="project-image" href="#project-gripper" aria-label="Ռոբոտացված բռնիչի մանրամասները">
+            <img src="images/robotic-gripper.jpg" alt="Ռոբոտացված բռնիչ" loading="lazy">
+            <span class="project-badge badge-green">Մեխանիկա</span><span class="project-image-arrow">↗</span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>02 / MECHANICS</span><span class="project-dot dot-green"></span></div>
+            <h3>Ռոբոտացված բռնիչ</h3>
+            <p>Մեխանիկական կառուցվածքի նախագծում, շարժման փոխանցում և առարկաների բռնելու փորձարկումներ։</p>
+            <a class="project-more" href="#project-gripper">Դիտել նախագիծը <span>→</span></a>
+          </div>
+          <details class="project-details" id="project-gripper"><summary>Նախագծի մանրամասները</summary><p>Բռնիչի կառուցվածքը թույլ է տալիս ուսումնասիրել մեխանիկական կապերը, շարժման ճշգրտությունը և կառավարման տարբեր եղանակները։</p></details>
+        </article>
+
+        <article class="project-card" data-category="electronics">
+          <a class="project-image" href="#project-arduino" aria-label="Arduino ռոբոտի մանրամասները">
+            <img src="images/arduino-robot.jpg" alt="Arduino ռոբոտ և էլեկտրոնային բաղադրիչներ" loading="lazy">
+            <span class="project-badge badge-orange">Էլեկտրոնիկա</span><span class="project-image-arrow">↗</span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>03 / ELECTRONICS</span><span class="project-dot dot-orange"></span></div>
+            <h3>Խելացի ռոբոտ</h3>
+            <p>Սենսորների և միկրոկառավարիչի միջոցով միջավայրին արձագանքող համակարգի ստեղծում։</p>
+            <a class="project-more" href="#project-arduino">Դիտել նախագիծը <span>→</span></a>
+          </div>
+          <details class="project-details" id="project-arduino"><summary>Նախագծի մանրամասները</summary><p>Սովորողները միացնում են էլեկտրոնային բաղադրիչները, ուսումնասիրում սենսորների ազդանշանները և ծրագրավորում սարքի արձագանքը։</p></details>
+        </article>
+
+        <article class="project-card" data-category="automation">
+          <a class="project-image" href="#project-arm" aria-label="Ռոբոտային թևի մանրամասները">
+            <img src="images/robotic-arm.jpg" alt="Ռոբոտային թև" loading="lazy">
+            <span class="project-badge badge-teal">Ավտոմատացում</span><span class="project-image-arrow">↗</span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>04 / AUTOMATION</span><span class="project-dot dot-teal"></span></div>
+            <h3>Ռոբոտային թև</h3>
+            <p>Շարժման ճշգրտություն, կառավարման տրամաբանություն և մեխանիկական հանգույցների հավաքում։</p>
+            <a class="project-more" href="#project-arm">Դիտել նախագիծը <span>→</span></a>
+          </div>
+          <details class="project-details" id="project-arm"><summary>Նախագծի մանրամասները</summary><p>Նախագիծը ներկայացնում է ռոբոտային թևի շարժման փուլերը և մեխանիկական ու էլեկտրոնային մասերի համատեղ աշխատանքը։</p></details>
+        </article>
+
+        <article class="project-card" data-category="programming">
+          <a class="project-image" href="#project-car" aria-label="Ռոբոտ մեքենայի մանրամասները">
+            <img src="images/robot-car-detail.jpg" alt="Ռոբոտ մեքենա" loading="lazy">
+            <span class="project-badge badge-blue">Ծրագրավորում</span><span class="project-image-arrow">↗</span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>05 / PROGRAMMING</span><span class="project-dot dot-blue"></span></div>
+            <h3>Ռոբոտ մեքենա</h3>
+            <p>Ծրագրային հրահանգների միջոցով շարժման, ուղղության և ռոբոտի արձագանքի կառավարում։</p>
+            <a class="project-more" href="#project-car">Դիտել նախագիծը <span>→</span></a>
+          </div>
+          <details class="project-details" id="project-car"><summary>Նախագծի մանրամասները</summary><p>Նախագծի ընթացքում ալգորիթմները վերածվում են շարժման հրահանգների, իսկ սովորողները ստուգում և բարելավում են կոդը։</p></details>
+        </article>
+
+        <article class="project-card" data-category="steam">
+          <a class="project-image" href="#project-steam" aria-label="Գործնական փորձարկումների մանրամասները">
+            <img src="images/hero-student-robot.jpg" alt="Սովորողը աշխատում է ռոբոտի վրա" loading="lazy">
+            <span class="project-badge badge-purple">STEAM</span><span class="project-image-arrow">↗</span>
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-meta"><span>06 / STEAM</span><span class="project-dot dot-purple"></span></div>
+            <h3>Գործնական փորձարկումներ</h3>
+            <p>Թիմային աշխատանք, ստեղծարար մոտեցում և նոր գաղափարների փորձարկում։</p>
+            <a class="project-more" href="#project-steam">Դիտել նախագիծը <span>→</span></a>
+          </div>
+          <details class="project-details" id="project-steam"><summary>Նախագծի մանրամասները</summary><p>Գործնական փորձարկումների միջոցով սովորողները միավորում են դիզայնը, տեխնոլոգիան և խնդիրների լուծման հմտությունները։</p></details>
+        </article>
+      </div>
+
+      <div class="projects-empty" hidden>Այս կատեգորիայում նախագծեր դեռ չկան։</div>
+    </div>
+  </section>
+
+  <section class="projects-cta-section">
+    <div class="container-xl">
+      <div class="projects-cta">
+        <div class="projects-cta-icon">⌁</div>
+        <div class="projects-cta-copy"><span>GDL · CREATE YOUR FUTURE</span><h2>Ունե՞ս քո <em>նախագիծը</em> և գաղափարը</h2><p>Միացի՛ր GDL-ին և քո գաղափարը վերածիր իրական տեխնոլոգիական լուծման։</p></div>
+        <a href="register.html" class="projects-primary-btn">Գրանցվել նախագծի համար <span>→</span></a>
+        <div class="projects-cta-decoration" aria-hidden="true">⚙　⌘　⌁</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="gdl-footer"><div class="gdl-footer-main">
+  <div class="gdl-footer-brand"><img src="images/logo.jpg" alt="GDL Logo"><div><h3>GDL</h3><p>Գյումրու Զարգացման Լաբորատորիա</p><small>Gyumri Development Laboratory</small></div></div>
+  <div class="gdl-contact"><span>📍</span><p>Մուշ 2 թաղամաս 4/18,<br>Գյումրի, Հայաստան</p></div>
+  <div class="gdl-contact"><span>☎</span><p>+374 93 12 34 56</p></div>
+  <div class="gdl-contact"><span>✉</span><p><a href="mailto:info@gdl.am">info@gdl.am</a></p></div>
+  <div class="gdl-social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div>
+</div><div class="site-footer"><div class="container-xl footer-inner">
+  <a class="footer-brand" href="index.html"><span>Gyumri Development Laboratory<small>Տեխնոլոգիա • Ստեղծարարություն • Ապագա</small></span></a>
+  <p>© 2026 Gyumri Development Laboratory</p>
+  <div class="footer-links"><a href="courses.html">Դասընթացներ</a><a href="projects.html">Նախագծեր</a><a href="contact.html">Կապ</a></div>
+</div></div></footer>
+<script src="script.js" defer></script></body></html>
